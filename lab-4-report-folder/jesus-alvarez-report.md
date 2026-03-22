@@ -39,31 +39,30 @@ integration in n8n
 ## Analysis
 
 **Where models agreed:** 
-The models generally agreed on records 1, 3, and 4, which were all concerning security alerts. These records dealt with unauthorized login attempts, phishing activities, and repeated SSH login failures (brute force attack). The sentiment model labeled them as negative, the zero-shot model labeled them as possible anomalies, and the Groq LLM labeled them with a higher severity level. 
+    - The models generally agreed on records 1, 3, and 4, which were all concerning security alerts. These records dealt with unauthorized login attempts, phishing activities, and repeated SSH login failures (brute force attack). The sentiment model labeled them as negative, the zero-shot model labeled them as possible anomalies, and the Groq LLM labeled them with a higher severity level. 
 
 **Where models disagreed:** 
-There were disagreements in records 2 and 5 because those records were describing routine system behaviors. The sentiment model labeled them as negative because the language used in the input text contained technical security verbiage. However, the zero-shot model and the Groq LLM were able to correctly label the events as routine or informational. 
+    - There were disagreements in records 2 and 5 because those records were describing routine system behaviors. The sentiment model labeled them as negative because the language used in the input text contained technical security verbiage. However, the zero-shot model and the Groq LLM were able to correctly label the events as routine or informational. 
 
 **Most accurate model overall:** 
-The Groq LLM gave the most useful classification for cybersecurity alerts. It was able to accurately label the records based on their severity levels, such as Critical, High, Medium, and Informational. 
+    - The Groq LLM gave the most useful classification for cybersecurity alerts. It was able to accurately label the records based on their severity levels, such as Critical, High, Medium, and Informational. 
 
 **Fastest/most practical:** 
-The Groq LLM would be the most practical model to use in the capstone project. It was able to give accurate severity classifications for all of the records compared to the Hugging Face model. The HF model needs more interpretation before its outputs can be put to use. 
+    - The Groq LLM would be the most practical model to use in the capstone project. It was able to give accurate severity classifications for all of the records compared to the Hugging Face model. The HF model needs more interpretation before its outputs can be put to use. 
 
 ## Recommended Models for My Capstone Component
 
 **Component:** Feed Collector
 
 **Primary model:** 
-Groq Llama 3 8B - This model can classify incoming threat alerts by severity, and it allows for the quick prioritization of critical events. 
+    - Groq Llama 3 8B - This model can classify incoming threat alerts by severity, and it allows for the quick prioritization of critical events. 
 
 **Secondary model (if applicable):** 
-facebook/bart-large-mnli (Zero-Shot Classification) - The zero-shot model can be a secondary classifier because it can categorize alerts into a broader range of groups. It can label them as routine activities or possible anomalies. 
+    - facebook/bart-large-mnli (Zero-Shot Classification) - The zero-shot model can be a secondary classifier because it can categorize alerts into a broader range of groups. It can label them as routine activities or possible anomalies. 
 
 **Rejected models and why:**
-distilbert sentiment model - This sentiment model was not able to reliably and accurately able to tell the difference between a routine activity and an actual threat when the record had technical verbiage inside the input text. 
-
-dslim/bert-large-NER model - This NER model was not able to identify all NER entities in all of the records. It wasn't able to pick up important names and places clearly stated in the records input text for a high-severity threat. 
+    - distilbert sentiment model: This sentiment model was not able to reliably and accurately able to tell the difference between a routine activity and an actual threat when the record had technical verbiage inside the input text. 
+    - dslim/bert-large-NER model: This NER model was not able to identify all NER entities in all of the records. It wasn't able to pick up important names and places clearly stated in the records input text for a high-severity threat. 
 
 ## Failure Cases and Limitations
 
