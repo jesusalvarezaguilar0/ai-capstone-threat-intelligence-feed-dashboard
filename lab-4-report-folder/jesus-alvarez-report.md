@@ -9,13 +9,13 @@
 
 **Input dataset:** 5 domain text samples covering cybersecurity alerts:
 - 2 clearly concerning/high-severity records
-Unauthorized login from IP 198.51.100.23 detected in admin account	
-Multiple failed SSH attempts from Beijing IP on Cloudflare production server — 47  attempts in 5 minutes
+    - Unauthorized login from IP 198.51.100.23 detected in admin account	
+    - Multiple failed SSH attempts from Beijing IP on Cloudflare production server — 47  attempts in 5 minutes
 - 1 ambiguous/edge case record
-Phishing email with spoofed Amazon domain detected targeting                finance@acmecorp.com
+    - Phishing email with spoofed Amazon domain detected targeting                finance@acmecorp.com
 - 2 routine/benign records
-Routine firewall rule update completed on fw-01 during scheduled maintenance window
-System resource utilization normal across all monitored hosts — no anomalies detected
+    - Routine firewall rule update completed on fw-01 during scheduled maintenance window
+    - System resource utilization normal across all monitored hosts — no anomalies detected
 
 **Models tested:**
 1. distilbert-base-uncased-finetuned-sst-2-english (sentiment)
