@@ -1,0 +1,75 @@
+﻿input_text,model_1_sentiment_label,model_1_sentiment_score,model_2_zeroshot_label,model_2_zeroshot_score,model_3_ner_entities,model_4_groq_classification,notes,tested_at
+Unauthorized login from IP 198.51.100.23 detected in admin account,NEGATIVE,0.9975,possible anomaly,1.0,{},**CRITICAL**: An unauthorized login from an unknown IP address to the admin account suggests a high-risk of compromised credentials or account takeover.,"1. Did the Sentiment model correctly identify which records are concerning vs. routine?
+Yes, the Sentiment model was able to correctly label the record as negative (concerning). Since the record talks about an unauthorized login onto an admin account. 
+
+2. What category did Zero-Shot assign to each record? Does it make sense?
+The Zero-Shot classified this as a possible anomaly. This does make sense as it is an unauthorized login, which would be a suspicious activity. 
+
+3. What entities did NER extract? Were they useful?
+There were no entities extracted because there were no mentions of a person, organization, or location in the record. 
+
+4. How did Groq's LLM classification compare to the HF models?
+Groq classified this as Critical, which was a higher classification than the one given by the Hugging Face models. This is a better reflection of the severity of having someone unauthorized try an admin login.
+
+5. Where did the models agree? Where did they disagree?
+Overall, both of the models agreed that the record was concerning. The only difference was that Groq gave it a slightly higher severity level than the Hugging Face model. ",3/19/2026 5:12pm
+Routine firewall rule update completed on fw-01 during scheduled maintenance window,NEGATIVE,0.9986,routine activity,1.0,{},"INFORMATIONAL
+
+The update is routine and within a scheduled maintenance window, suggesting that it is a planned and expected activity.","1. Did the Sentiment model correctly identify which records are concerning vs. routine?
+No, the Sentiment model was not able to identify the record correctly, as it labeled the record as negative (concerning). However, all the record talks about is a routine firewall update, which would be routine (positive) and not concerning (negative). 
+
+2. What category did Zero-Shot assign to each record? Does it make sense?
+The Zero-shot classified this record as a routine activity, which is accurate, as it is just a routine firewall update. 
+
+3. What entities did NER extract? Were they useful?
+No entities were extracted because there were no mentions of a person, organization, or location in the record. 
+
+4. How did Groq's LLM classification compare to the HF models?
+Groq labeled it as Informational and negative, which is accurate, as the record talks about scheduled maintenance, but it also labels events negative even if they are routine. While HF labeled it as low severity and positive sentiment, in which the severity is correct, but to call a routine event positive is based on personal perception. 
+
+5. Where did the models agree? Where did they disagree?
+Zero-shot and Groq were both able to identify the record as routine. The sentiment model states that it is negative, but that is a wording choice that can be seen as negative or positive, and it can still be correct. ",3/19/2026 5:12pm
+Phishing email with spoofed Amazon domain detected targeting finance@acmecorp.com,NEGATIVE,0.9959,possible anomaly,0.8,"{""entity_group"":""ORG"",""score"":0.99667954,""word"":""Amazon"",""start"":28,""end"":34}","MEDIUM. This alert is considered medium severity because while the phishing email poses a risk to the company's finance department, the domain spoofing attempt can be easily detected by a robust email security system, limiting potential damage.","1. Did the Sentiment model correctly identify which records are concerning vs. routine?
+Yes, the Sentiment model was able to label this as negative (concerning),given that it talks about a phishing email being detected. 
+
+2. What category did Zero-Shot assign to each record? Does it make sense?
+The Zero-shot classified it as a possible anomaly, and it makes sense because it is referencing a phishing email being detected.
+
+3. What entities did NER extract? Were they useful?
+There was 1 Ner extracted, and that was the organization Amazon, since it shows which organization was being impersonated during the phishing email. 
+
+4. How did Groq's LLM classification compare to the HF models?
+The Groq LLM labeled it as a Medium severity level, and the Hugging Face (HF) model labeled it as a High severity level. The HF model evaluated the record as a higher priority than the Groq LLM. 
+
+5. Where did the models agree? Where did they disagree?
+Both models agree in labeling the record as suspicious. However, the HF model classifies it with a slightly higher severity level than the Groq LLM.  ",3/19/2026 5:12pm
+Multiple failed SSH attempts from Beijing IP on Cloudflare production server — 47 attempts in 5 minutes,NEGATIVE,0.9994,possible anomaly,0.8,"{""entity_group"":""MISC"",""score"":0.9697967,""word"":""SS"",""start"":16,""end"":18}","**HIGH**
+
+A large number of failed SSH attempts from a specific IP in a short period of time suggests a potential brute force attack attempting to gain unauthorized access to the server.","1. Did the Sentiment model correctly identify which records are concerning vs. routine?
+Yes, the Sentiment model was able to correctly label the record as Negative (concerning), as the record is referencing multiple failed SSH attempts, which is equivalent to a brute force attack. 
+
+2. What category did Zero-Shot assign to each record? Does it make sense?
+The Zero-shot labeled the record as a possible anomaly. Which is accurate, as the record mentions a brute force attack.
+
+3. What entities did NER extract? Were they useful?
+It extracted the word SS from the word SSH, and it labeled it as a miscellaneous entity. This NER entity wasn’t very useful, as it referred to the technical protocol being used and not any meaningful named entities that were relevant to this record. It failed to extract the words “Beijing” and “Cloudflare”, which were clearly stated in the record’s input text. 
+
+4. How did Groq's LLM classification compare to the HF models?
+Both the Groq LLM and HF model classify the record as High severity, given that the description of the record signifies a possible brute force attack.
+
+5. Where did the models agree? Where did they disagree?
+Both models agree on the severity level of the record. However, the Groq LLM gives a better analysis of the record than the HF model. ",3/19/2026 5:12pm
+System resource utilization normal across all monitored hosts — no anomalies detected,NEGATIVE,0.9880,routine activity,1.0,{},INFORMATIONAL: This alert is informational since it simply confirms the expected normal operation of system resource utilization across monitored hosts without indicating any actual security threats or anomalies.,"1. Did the Sentiment model correctly identify which records are concerning vs. routine?
+No, the Sentiment model was not able to identify the record correctly, as it labeled the record as negative (concerning). Given that the record states that there are no anomalies detected. 
+
+2. What category did Zero-Shot assign to each record? Does it make sense?
+The Zero-shot labeled this record as a routine activity. This is accurate as the record mentions that there are no anomalies detected.
+
+3. What entities did NER extract? Were they useful?
+There are no entities extracted because there are no identifiable names, organizations, or locations in the record. 
+
+4. How did Groq's LLM classification compare to the HF models?
+The Groq LLM classified the record as informational, and the HF model just had it labeled as positive sentiment and low severity.  
+
+5. Where did the models agree? Where did they disagree?
+Both models agree that the record is not negative in nature, except when it comes to the sentiment model, which labeled it as negative (concerning). However, the Groq LLM labeled it in more detail than the HF model. ",3/19/2026 5:12pm
