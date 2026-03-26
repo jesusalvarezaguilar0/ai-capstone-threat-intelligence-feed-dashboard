@@ -5,7 +5,7 @@
 | Name | Role/Component | GitHub Username |
 |------|---------------|-----------------|
 | Jesus Alvarez ] | Component 1- Feed Collector | @[username] |
-| Harry Yachimba | Component 2 - AI Summarizer & IOC Extractor | @[username] |
+| Harry Yachimba | Component 2 - AI Summarizer & IOC Extractor | @[HarryYachimba-ArmChairWarrior] |
 | Julian Silva-Erazo | Component 3 - Relevance Scorer | @[username] |
 | Safayet Safin | Component 4 - Integration, Testing & Presentation | @[username] |
 
