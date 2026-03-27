@@ -6,7 +6,7 @@
 |------|---------------|-----------------|
 | Jesus Alvarez ] | Component 1- Feed Collector | @[username] |
 | Harry Yachimba | Component 2 - AI Summarizer & IOC Extractor | @[HarryYachimba-ArmChairWarrior] |
-| Julian Silva-Erazo | Component 3 - Relevance Scorer | @[username] |
+| Julian Silva-Erazo | Component 3 - Relevance Scorer | @[Julznyc12] |
 | Safayet Safin | Component 4 - Integration, Testing & Presentation | @[username] |
 
 ## Problem Statement
