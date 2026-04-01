@@ -19,7 +19,9 @@ This project would be used by security analysts and cybersecurity teams at a sma
 
 ## Architecture
 
-![ArchitectureDiagram](https://app.diagrams.net/#G1ZZj3yySfiCTuzBBk6x8-ZCove5HU3mXb#%7B%22pageId%22%3A%22OIHx0Rzq6e4_eJkJ5iY6%22%7D)
+![ArchitectureDiagram](docs/architecture.png)
+
+## https://app.diagrams.net/#G1ZZj3yySfiCTuzBBk6x8-ZCove5HU3mXb#%7B%22pageId%22%3A%22OIHx0Rzq6e4_eJkJ5iY6%22%7D
 
 ## Component Breakdown
 
