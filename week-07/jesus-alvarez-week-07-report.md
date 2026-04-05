@@ -42,4 +42,7 @@
 - How could you improve this chatbot for real-world use?
   - I would improve the chatbot by adding more documents that cover more techniques and I would add more features that would prevent the chatbot from hallucinating when it is asked a question that is not within its documents.
 - How might you use RAG in your capstone project?
-  - I could use RAG to build a cybersecurity assistant that analyzes threat intelligence feeds and maps them. It could help automate the threat analysis by retrieving relevant attack patterns and explaining them. 
+  - I could use RAG to build a cybersecurity assistant that analyzes threat intelligence feeds and maps them. It could help automate the threat analysis by retrieving relevant attack patterns and explaining them.
+
+## 6. Flowise Chatbot Share Link
+- https://cloud.flowiseai.com/chatbot/7f436a8e-24f9-473a-8f23-1adfcf8c4187 
