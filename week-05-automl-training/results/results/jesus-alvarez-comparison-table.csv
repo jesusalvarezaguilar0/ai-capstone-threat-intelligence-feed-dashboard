@@ -1,0 +1,6 @@
+input_text,generic_label,generic_score,finetuned_a_label,finetuned_a_score,finetuned_b_label,finetuned_b_score,winner,notes,tested_at
+Unauthorized login from IP 198.51.100.23 detected in admin account,POSITIVE,0.7481,phishing,1.0000,LABEL_0,0.8336,,,4/9/2026 11:04pm
+Routine firewall rule update completed on fw-01 during scheduled maintenance window,POSITIVE,0.7481,benign,1.0000,LABEL_1,0.5376,,,4/9/2026 11:04pm
+Phishing email with spoofed Amazon domain detected targeting finance@acmecorp.com,POSITIVE,0.7481,phishing,1.0000,LABEL_0,0.7415,,,4/9/2026 11:04pm
+Multiple failed SSH attempts from Beijing IP on Cloudflare production server — 47 attempts in 5 minutes,POSITIVE,0.7481,benign,0.9898,LABEL_1,0.5719,,,4/9/2026 11:03pm
+System resource utilization normal across all monitored hosts — no anomalies detected,POSITIVE,0.7481,benign,0.9996,LABEL_0,0.8388,,,4/9/2026 11:04pm
