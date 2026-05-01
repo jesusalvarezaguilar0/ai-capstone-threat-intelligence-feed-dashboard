@@ -1,0 +1,10 @@
+input_Text	model_1_sentiment_label	model_1_sentiment_score	model_2_zeroshot_label	model_2_zeroshot_score	model_3_ner_entities	model_4_groq_classification	notes	tested_at
+"Unauthorized login from IP 198.51.100.4 traced to Moscow targeting user John Miller
+at 3:47 AM"	POSITIVE	0.7481	routine activity	1.0	{"entity_group":"LOC","score":0.9996966,"word":"Moscow","start":50,"end":56}	INFORMATIONAL. This alert indicates a routine and expected maintenance activity, posing no immediate security risk.		3/26/2026 9:24pm
+Routine firewall rule update completed on fw-01 during scheduled maintenance window	POSITIVE	0.7481	possible anomaly	0.8	{"entity_group":"ORG","score":0.8416247,"word":"IP","start":42,"end":44}	"INFORMATIONAL
+
+Reasoning: This alert indicates a routine and scheduled activity with no reported issues or discrepancies, indicating a business-as-usual scenario."		3/26/2026 9:24pm
+Phishing email with spoofed Amazon domain detected targeting finance@acmecorp.com	POSITIVE	0.7481	critical threat	0.0	{"entity_group":"LOC","score":0.57138574,"word":"Beijing","start":34,"end":41}	"LOW
+Reasoning: Although the phishing email does require attention, it's likely a basic attempt and might be caught by email filters or the user's awareness; it does not have the potential to cause significant damage to the organization's assets."		3/26/2026 9:24pm
+Multiple failed SSH attempts from Beijing IP on Cloudflare production server — 47 attempts in 5 minutes	POSITIVE	0.7481	possible anomaly	0.0	{"entity_group":"MISC","score":0.9697967,"word":"SS","start":16,"end":18}	CRITICAL. This alert suggests a brute-force SSH attack from a potential malicious IP, which could lead to unauthorized access to the production server potentially causing significant damage.		3/26/2026 9:24pm
+System resource utilization normal across all monitored hosts - no anomalies detected	POSITIVE	0.7481	routine activity	1.0	{"entity_group":"PER","score":0.9992653,"word":"John Miller","start":72,"end":83}	This alert is classified as INFORMATIONAL. The system resource utilization is within expected parameters, indicating no immediate concerns or potential issues.		3/26/2026 9:24pm
