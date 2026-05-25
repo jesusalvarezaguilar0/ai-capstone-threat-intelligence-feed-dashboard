@@ -6,4 +6,4 @@
 
 
 ## Screenshot 3
-<img width="1336" height="826" alt="Screenshot 2026-05-14 at 11 18 19 PM" src="https://github.com/user-attachments/assets/15f4d9a3-4bb8-4748-b0f6-b3ccf96b3f9e" />
+<img width="1768" height="999" alt="Screenshot 2026-05-11 at 1 15 03 PM" src="https://github.com/user-attachments/assets/f15d71c0-7f9c-401a-b9e3-fc86b6f74411" />
