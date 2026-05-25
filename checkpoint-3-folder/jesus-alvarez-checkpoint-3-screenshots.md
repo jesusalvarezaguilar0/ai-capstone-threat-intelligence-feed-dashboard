@@ -1,4 +1,4 @@
-## Screenshot 1 – Automated Threat Intelligence Ingestion
+# Screenshot 1 – Automated Threat Intelligence Ingestion
 <img width="771" height="415" alt="Screenshot 2026-04-23 at 11 03 42 PM" src="https://github.com/user-attachments/assets/f0be076a-39e9-4ebe-976d-c7f00a577b42" />
 
 The system automatically collects and normalizes threat intelligence from multiple cybersecurity sources into a centralized Airtable database, eliminating the need for manual data collection.
