@@ -45,4 +45,4 @@
   - I could use RAG to build a cybersecurity assistant that analyzes threat intelligence feeds and maps them. It could help automate the threat analysis by retrieving relevant attack patterns and explaining them.
 
 ## 6. Flowise Chatbot Share Link
-- https://cloud.flowiseai.com/chatbot/7f436a8e-24f9-473a-8f23-1adfcf8c4187 
+https://cloud.flowiseai.com/chatbot/66930e87-cf2d-41e7-a149-73d74f0628bd
